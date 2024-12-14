@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">First Name:</label>
+            <input type="text" name="name" placeholder="enter your first name">
+            <br>
+            <br>
+            <label for="name">Last Name:</label>
+            <input type="text" name="name" placeholder="enter your last name" >
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female
+            <br>
+            <br>
+    
+            <select name="country">
+                <option value="">select country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" name="submit">
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>educational information</legend>
+            <lable for="degree">Degree</lable>
+            <input type="text" name="name" placeholder="enter your degree">
+            <br>
+            <br>
+            <lable for="cgpa">CGPA</lable>
+            <input type="number" name="name" placeholder="enter your cgpa">
+        </fieldset>
+       <br><br>
+       <textarea name="" id="" placeholder="enter your feedback....." ></textarea>
+       
+       <input type="submit" value="Submit" />
+       <button>click here to submit</button>
+       <br><br>
+
+       <!--outgoup to categorize options-->
+       <fieldset>
+        <legend>Food items</legend>
+        <select name="zeeshan">
+            <option value="">Selct items</option>
+            <optgroup label="non-veg">
+                <option value="chicken">chicken 65</option>
+                <option value="mutton">mutton fry</option>
+            </optgroup>
+            <optgroup label="veg">
+                <option value="paneer">Paneer</option>
+                <option value="green peas">Green Peas</option>
+            </optgroup>
+           </select>
+       </fieldset>
+
+    </form>
+    <input type="text" list="browsers" name="browsers" placeholder="enter your favourite browser name...">
+    <datalist id="browsers">
+        <option value="YAHOO">YAHOO</option>
+        <option value="GOOGLE">GOOGLE</option>
+    </datalist>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="number" name="a" id="a">+
+        <input type="number" name="b" id="b">=
+        <output name="result"></output>
+    </form>
+</body>
+</html>

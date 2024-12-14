@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <!--Registration form-->
+            <legend style="font-size: 40px;"><strong>Event Registration</strong></legend>
+            <fieldset>
+                <!--student details-->
+                <legend><b>Student Details</b></legend>
+
+                <div>
+                    <label for="name">First name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter first name" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="name">Last name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter last name" required>
+                </div>
+
+                <br>
+
+                <lable for="rollno">ROLL-NO:</lable>
+                <input type="text" id="rollno" name="rollno" placeholder="enter roll number" required>
+
+                <br>
+                <br>
+
+                <lable for="phoneno">PHONE-NO:</lable>
+                <input type="tel" id="phoneno" name="phoneno" placeholder="enter phone number" required>
+                <br><br>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">female
+                    <input type="radio" name="gender" value="other">other
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="DOB">Date of Birth</label>
+                    <input type="date" id="DOB" name="DOB" required>
+
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age">
+                </div>
+
+                <br>
+
+
+                <div>
+                    <label for="branch">Select branch:</label>
+                    <select name="branch" required>
+                        <option value=""></option>
+                            <optgroup label="B-tech">
+                            <option value="">IT</option>
+                            <option value="">EEE</option>
+                            <option value="">CSE</option>
+                            <option value="">Civil</option>
+                            <option value="">MECH</option>
+                            <option value="">ECE</option>
+                            <option value="">MBA</option>
+                            <option value="">MCA</option>
+                        </optgroup>
+                        <optgroup label="Professional course">
+                            <option value="">MBA</option>
+                            <option value="">MCA</option>
+                        </optgroup>
+                        <optgroup label="Diploma">
+                            <option value="">ECE</option>
+                            <option value="">IT</option>
+                            <option value="">EEE</option>
+                            <option value="">Civil</option>
+                            <option value="">MECH</option>
+                        </optgroup>
+                    </select>
+                    <br><br>
+                    <label for="year">Select year:</label>
+                    <select name="year" required>
+                        <option value=""></option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <!--Student type-->
+                <legend><b>Student  accomodation</b></legend>
+                <label for="mode">I am a:</label>
+                <input type="radio" name="mode" value="day scholar">Day Scholar
+                <input type="radio" name="mode" value="hosteler">Hosteler
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend><b>Preference</b></legend>
+            <div>
+                <label for="event type">Select event type you prefer:</label>
+                <select name="event type" required>
+                    <option value=""></option>
+                    <option value="">Cultural</option>
+                    <option value="">Technical</option>
+                    <option value="">Sports</option>
+                    <option value="">others</option>
+                </select>
+            </div>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend><b>Instructions</b></legend>
+            <div>
+                <h3 style="text-align:centre;">Rules and Regulations</h3>
+                <ul>
+                    <li>wear your id card through out the event</li>
+                    <li>
+                        proper dress code is needed
+                        <ul>
+                        <li>
+                            for boys following are no allowed
+                            <ul>
+                            <li>torn jeans</li>
+                            <li>ankle length jeans</li>
+                            <li>faded jeans</li>
+                            </ul>
+                        </li>
+                        <li>
+                            for girls following are not allowed
+                            <ul>
+                            <li>crop tops</li>
+                            <li>tank tops</li>
+                            <li>short length skirts</li>
+                            <li>low neck tops</li>
+                            </ul>
+                        </li>
+                        </ul>
+                    </li>
+                    <li>no one is allowed to go out of the campuss after the event starts</li>
+                    <li>if any student consumes alcohol and attends the event will be strictly punished and imposed fine of 10,000</li>
+                </ul>
+                <br>
+                <p><b>Note:</b> Every student must attend the college on or before 9:15 A.M. and studentds are not allowed to go out until the event ends. Transport facility is as usually available for the day scholars</p>
+                <label for="checkbox"><input type="checkbox" name="agree" required>i agree to follow the instructions and rules </label>
+            </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend><b>Feedback</b></legend>
+            <div>
+                <label>share your feedback or suggestions:(optional)</label>
+                <br>
+                <textarea name="" id="" placeholder="enter your feedback....." ></textarea>
+            </div>
+            <button style="background-color: black; color: aliceblue;">Register</button>
+            <br><br>
+            </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
